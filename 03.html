@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>接受参数并弹框</title>
+    <style>
+       
+        label{
+            float: left; width: 10em; margin-right: 1em; text-align: right;
+        }
+        
+    </style>
+    <script>
+        function warning(a){
+            alert('确认用户名为'+a.value);
+        }
+        function re(){
+            var inpu=document.getElementsByTagName("input");
+            warning(inpu[0]);
+        }
+    </script>
+</head>
+<body>
+    <div id="sub">
+         <form >
+        <label>用户名：</label><input type="text" id="a1" name="user" value="123"><br>
+        <label>密码：</label><input type="password" name="pas" value="123456"><br>
+       
+    </form> 
+    
+    <input type="button" value="登录" onclick="re()">
+    </div>
+   
+    
+</body>
+</html>
