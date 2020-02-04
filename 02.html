@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>变换网页背景颜色</title>
+    <style>
+      /* body{
+           background-color: darkgray;
+       }*/
+        
+    </style>
+    <script>
+        function changecolor(color){
+            document.bgColor=color;
+        }
+    </script>
+</head>
+<body >
+    
+    <div class="skin">
+        <input type="button"  title="绿色" id="gre" onclick="changecolor('darkgreen')" value="绿色">
+        <input type="button"  title="蓝色" id="blu" onclick="changecolor('cadeblue')" value="蓝色">
+        <input type="button"  title="灰色" id="gr" onclick="changecolor('darkgrey')" value="灰色">
+    </div>
+    
+</body>
+</html>
