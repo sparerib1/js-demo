@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>用循环将三个div变色</title>
+    <style>
+        #a1{
+            text-align: center;
+        }
+        #ch{
+            width:330px;height:100px;margin:10px auto;
+        }
+        #ch div{
+            
+            float:left;width:100px;height:100px;margin:0 5px;
+            background-color: cadetblue;
+           
+        }
+    </style>
+    <script>
+        function changecolor(){
+        var di=document.getElementById("ch").getElementsByTagName("div");
+        for(var i=0;i<di.length;i++){
+            di[i].style.backgroundColor="yellow";
+        }
+        }
+    </script>
+</head>
+<body>
+    <div id="a1">
+        <input type="button" value="点击使方块变色" onclick="changecolor()">
+    </div>
+        
+        <div id="ch">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+
+   
+</body>
+</html>
