@@ -1,0 +1,14 @@
+ul li img{
+    width: 200px;
+    height: 200px;
+    opacity: 0.5;
+}
+ul li{
+    list-style: none;
+    display: inline;
+}
+ul li.crent img{
+    width: 200px;
+    height: 200px;
+    opacity: 1;
+}
