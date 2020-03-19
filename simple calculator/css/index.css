@@ -1,0 +1,37 @@
+table{
+    border: 1px solid grey;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+tr{
+    text-align: center;
+}
+td{
+    border: 1px solid grey;
+   
+}
+input{
+    width: 204px;
+    height: 51px;
+}
+.grey{
+    background-color: lightcyan;
+    color: lightskyblue;
+}
+.blue{
+    background-color: lightskyblue;
+    color: white;
+    height: 100px;
+    width: 50px;
+}
+.nu{
+       width: 50px;      
+}
+.tu{
+    width: 100px;
+}
+.screen{
+    text-align: right;
+    background-color: white;
+    color: black;
+}
