@@ -13,10 +13,11 @@ td{
 input{
     width: 204px;
     height: 51px;
+    border: none;
 }
 .grey{
-    background-color: lightcyan;
-    color: lightskyblue;
+    background-color:#CCCCCC;
+    color: #3399CC;
 }
 .blue{
     background-color: lightskyblue;
