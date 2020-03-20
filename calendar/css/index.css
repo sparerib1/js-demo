@@ -1,0 +1,52 @@
+ul li{
+    list-style: none;
+    float: left;
+    background-color: dimgray;
+    border: dimgray 1px solid;
+    color: floralwhite;
+    margin: 5px 5px;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    font-family: 隶书;
+    font-size: 1.5em;
+    line-height: 80px;/*使用line-height设置与height一样的高度即可让li标签的文字居中*/
+}
+.div1{
+    background-color: lightgray;
+    width: 360px;
+    height: 480px;
+    margin: 0 auto;
+}
+.div1{
+    position: relative;
+}
+.div5{
+    position: absolute;
+    bottom: 0px;
+}
+.div5 p{
+    border: whitesmoke 1px solid;
+    margin: 5px 5px;
+    background-color: #CCCCCC;
+    text-align: center;
+    font-family: 隶书;
+    width: 340px;
+    height: 80px;
+    line-height: 80px;
+    font-size: 1.2em;
+}
+ul li.chang{
+    list-style: none;
+    float: left;
+    background-color:whitesmoke;
+    border: dimgray 1px solid;
+    color: mediumseagreen;
+    margin: 5px 5px;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    font-family: 隶书;
+    font-size: 1.5em;
+    line-height: 80px;/*使用line-height设置与height一样的高度即可让li标签的文字居中*/
+}
