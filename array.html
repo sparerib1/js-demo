@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>数组练习</title>
+    <style>
+        div{
+            border: 1px solid black;
+            height: 50px;
+            font-size: 0.8em;
+        }
+    </style>
+</head>
+<body>
+    <div>January(1),February(2),March(3),April(4),May(5),June(6),July(7),Aguest(8),September(9),October(10),November(11),December(12)</div>
+    <p>栈方法练习</p>
+    <input type="button" value="删除Dec">
+    <input type="button" value="添加Dec">
+    <p>队列方法练习</p>
+    <input type="button" value="删除Jan">
+    <input type="button" value="添加Jan">
+    <hr/>
+    <div>0,1,2,3,4,5,6</div>
+    <p>concat方法练习</p>
+    <input type="button" value="复制">
+    <input type="button" value="还原">
+    <p>slice方法练习</p>
+    <input type="button" value="只要1-4">
+    <hr/>
+    <div>red,green,blue,white,yellow,black,brown</div>
+    <p>splice方法练习</p>
+    <input type="button" value="还原">
+    <input type="button" value="删除前三项">
+    <input type="button" value="删除2-4项">
+    <input type="button" value="在第2项后插入orange,purple">
+    <input type="button" value="替换第1,2项">
+    <script>
+        window.onload=function(){
+            var adiv=document.getElementsByTagName("div");
+            var ainput=document.getElementsByTagName("input");
+            var arr=[];
+            var i=0;
+            function getArray(str){
+                arr.length=0;
+                str = str.split(",");//split()用于将字符串分割为字符数组，例如1|2|3字符串，使用split("|",2)，返回"1","2"
+                for (var i=0;i<str.length;i++)
+                {
+                     arr.push(str[i]);
+                }
+                   
+                    return arr
+                
+            };
+            ainput[0].onclick=function(){
+                arr=getArray(adiv[0].innerHTML);
+                arr.pop();
+                adiv[0].innerHTML=arr.join();//join方法是将数组中的所有元素放进字符串,例子请看https://www.w3school.com.cn/jsref/jsref_join.asp
+            };
+            ainput[1].onclick=function(){
+                arr=getArray(adiv[0].innerHTML);
+                arr.push("December(12)");
+                adiv[0].innerHTML=arr.join();
+            };
+            ainput[2].onclick=function(){
+                arr=getArray(adiv[0].innerHTML);
+                arr.shift();
+                adiv[0].innerHTML=arr.join();
+            };
+            ainput[3].onclick=function(){
+                arr=getArray(adiv[0].innerHTML);
+                arr.unshift("January(1)");
+                adiv[0].innerHTML=arr.join();
+            };
+            ainput[4].onclick=function(){
+                arr=getArray(adiv[1].innerHTML);
+                var arr1=arr.concat("0","1","2","3","4","5","6");
+                adiv[1].innerHTML=arr1.join();
+            };
+            ainput[5].onclick=function(){
+                arr=getArray(adiv[1].innerHTML);
+                arr.length=7;
+                adiv[1].innerHTML=arr.join();
+            };
+            ainput[6].onclick=function(){
+                arr=getArray(adiv[1].innerHTML);
+                var arr2=arr.slice(1,5);
+                adiv[1].innerHTML=arr2.join();
+            };
+            ainput[7].onclick=function(){
+                arr=["red","green","blue","white","yellow","black","brown"];
+                adiv[2].innerHTML=arr.join();
+            };
+            ainput[8].onclick=function(){
+                arr=getArray(adiv[2].innerHTML);
+                arr.splice(0,3);
+                adiv[2].innerHTML=arr.join();
+            };
+            ainput[9].onclick=function(){
+                arr=getArray(adiv[2].innerHTML);
+                arr.splice(2,3);
+                adiv[2].innerHTML=arr.join();
+            };
+            ainput[10].onclick=function(){
+                arr=getArray(adiv[2].innerHTML);
+                arr.splice(2,0,"orange","purple");
+                adiv[2].innerHTML=arr.join();
+            };
+            ainput[11].onclick=function(){
+                arr=getArray(adiv[2].innerHTML);
+                arr.splice(1,2,"#009900", "#0000ff");
+                adiv[2].innerHTML=arr.join();
+            };
+            
+        }
+    </script>
+</body>
+</html>
